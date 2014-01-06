@@ -1,0 +1,223 @@
+/***************************************************
+ * Common
+ **************************************************/
+p {
+	color: #333;
+	margin: 12px 0;
+}
+
+a {
+	color: #f97e76;
+}
+
+h2 {
+	color: #f97e76;
+	font-size: 2em;
+}
+
+pre {
+	background-color: #EEE;
+	padding: 8px;
+	overflow-x: auto;
+}
+
+/***************************************************
+ *  _layouts
+ **************************************************/
+@font-face {
+	font-family: 'Pathway';
+	src: url('pathway.ttf');
+}
+
+html, body {
+	background-color: #E9F0F4; 
+	font-family: 'Pathway';
+	height: 100%;
+}
+
+.site {
+	min-height: 100%;
+	margin-bottom: -120px;
+}
+
+.site:after {
+	content: "";
+	display: block;
+}
+
+.header {
+	background: #27ae90;
+	position: relative;
+	overflow: hidden;
+}
+
+.image {
+	display: block;
+	max-height: 384px;
+	margin: 0 auto;
+	max-width: 60%;
+}
+
+nav {
+	background-color: #2E3641;
+	height: 72px;
+	text-align: center;
+}
+
+nav ul li {
+	display: inline-block;
+	width: 128px;
+}
+
+nav ul a {
+	color: #FFF;
+	display: block;
+	line-height: 72px;
+	font-size: 2.5em;
+	text-decoration: none;
+}
+
+nav ul a:hover {
+	color: #C1CFD9;
+}
+
+div.maincontent {
+	overflow: hidden;
+}
+
+div.footer, .site:after {
+	height: 120px;
+}
+
+div.footer {
+	background-color: #2E3641;
+	padding: 8px;
+	text-align: center;
+}
+div.footer p {
+	color: #FFF;
+}
+div.footer .followlinks ul {
+	text-align: center;
+}
+div.footer .followlinks ul li {
+	display: inline-block;
+	margin: 8px;
+}
+div.footer .followlinks ul li img {
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+/*************************************************
+ * Posts
+ ************************************************/
+.post {
+   background-color: #FFF;
+	border-bottom: 4px solid #DDD;
+	margin: 12px auto;
+	min-height: 96px;
+	padding-bottom: 8px;
+	position: relative;
+	width: 95%;
+}
+
+.dateformat {
+	background-color: #F97E76;
+	color: #FFF;
+	padding: 8px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 56px;
+}
+
+.leftside {
+	float: left;
+}
+
+.day_month {
+	font-size: 2em;
+	line-height: 28px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 48px;
+}
+
+.rightside {
+	float: right;
+}
+
+.year {
+	line-height: 14px;
+	text-align: center;
+	width: 8px;
+	word-wrap: break-word;
+}
+
+.post_content {
+	margin: 4px 16px 0 84px;
+}
+
+.post_content a {
+	color: #F97E76;	
+	text-decoration: none;
+}
+
+.post_content .title {
+	font-size: 1.5em;
+	position: relative;
+	top: 4px;
+}
+
+.post_content .content {
+	font-family: 'Roboto';
+	font-size: 0.9em;
+	margin: 4px 0;
+	position: relative;
+	text-align: justify;
+	top: 4px;
+}
+
+/*****************************************
+ * Single Post
+ ****************************************/
+.single_post {
+	background-color: #FFF;
+	border-bottom: 4px solid #DDD;
+	margin: 16px auto;
+	padding: 8px;
+	width: 90%;
+}
+
+.single_post h2 {
+	text-align: center;
+}
+
+.single_post .date {
+	text-align: center;
+}
+
+.single_post .content {
+	margin: 32px 0;
+	font-family: 'Roboto';
+	text-align: justify;
+}
+
+/*****************************************
+ * clearfix
+ ****************************************/
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix { display: inline-block;}
+
+/* Hides from IE-mac */
+* html .clearfix { height: 1%;}
+.clearfix { display: block;}
+/* End hide from IE-mac */
