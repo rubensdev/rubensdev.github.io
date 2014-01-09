@@ -3,29 +3,23 @@ layout: default
 title: RubensDEV Things I learned
 ---
 
-<div id="home">
+<div id="home" ng-controller="PostsListCtrl">
   <ul class="posts">
-    {% for post in site.posts %}
-      <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li> -->
-		<li>
+		<li ng-repeat="post in posts | filter:query">
 			<div class="post clearfix">
 				<div class="dateformat">
 					<div class="leftside">
-						<div class="day_month">{{post.date | date: "%d %b" }}</div>
+						<div class="day_month">{{'{{post.day_month '}}}}</div>
 					</div>
 					<div class="rightside">
-						<div class="year">{{post.date | date: "%Y" }}</div>
+						<div class="year">{{'{{post.year '}}}}</div>
 					</div>
 				</div>
 				<div class="post_content">
-					<div class="title"><a href="{{ post.url }}#sp">{{ post.title }}</a></div>
-					<div class="content">
-						{{ post.content}} 
-					</div>
+					<div class="title"><a href="{{'{{post.url' }}}}">{{'{{post.title'}}}}</a>
+					<div class="content" ng-bind-html="post.content"></div>
 				</div>
-				<div style="clear:both;"></div>
 			</div>
 		</li>
-    {% endfor %}
   </ul>
 </div>

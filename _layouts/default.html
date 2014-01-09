@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="blogApp">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,7 +14,10 @@
         <!-- Mobile CSS -->
         <link rel="stylesheet" media="(max-width: 50em)" href="/css/mobile.css" />
 		  <!-- Google Fonts -->
-		  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>	
+		  <script type="text/javascript" src="js/angular.min.js"></script>
+		  <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
+		  <script type="text/javascript" src="js/controller.js"></script>
+		  <script type="text/javascript"> postsApp.posts = {% include Helper/postshelper %} </script>
     </head>
     <body>
         <div class="site">
@@ -33,7 +36,7 @@
 					   <li>Item 2</li>
 				  </ul>
 				  <div class="top_search">
-						<input class="form-control search" type="text" placeholder="search" />
+						<input class="form-control search" type="text" placeholder="search" ng-model="query"/>
 				  </div>
 			  </div> <!-- top_menu -->
 			  <div class="maincontent">
@@ -54,11 +57,5 @@
 				  </ul>
 			  </div>
         </div> <!-- footer -->
-		  <script type="text/javascript">
-				var  w = window.innerWidth
-					, h = window.innerHeight;
-
-				console.log(w, h);
-		  </script>
     </body>
 </html>

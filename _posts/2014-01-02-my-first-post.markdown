@@ -2,6 +2,7 @@
 layout: post
 title:  "My first post"
 date:   2014-01-02 17:23:13
+encoding: utf-8
 categories: stuffs mythings
 ---
 

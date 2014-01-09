@@ -176,7 +176,7 @@ div.footer .followlinks ul li img {
 }
 
 .post_content .content {
-	font-family: 'Roboto';
+	font-family: 'Pathway';
 	font-size: 0.9em;
 	margin: 4px 0;
 	position: relative;
@@ -197,6 +197,7 @@ div.footer .followlinks ul li img {
 
 .single_post h2 {
 	text-align: center;
+	font-family: 'Pathway';
 }
 
 .single_post .date {
@@ -205,7 +206,8 @@ div.footer .followlinks ul li img {
 
 .single_post .content {
 	margin: 32px 0;
-	font-family: 'Roboto';
+	font-family: 'Pathway';
+	font-size: 1.2em;
 	text-align: justify;
 }
 
