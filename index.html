@@ -3,23 +3,15 @@ layout: default
 title: RubensDEV Things I learned
 ---
 
-<div id="home" ng-controller="PostsListCtrl">
-  <ul class="posts">
-		<li ng-repeat="post in posts | filter:query">
-			<div class="post clearfix">
-				<div class="dateformat">
-					<div class="leftside">
-						<div class="day_month">{{'{{post.day_month '}}}}</div>
-					</div>
-					<div class="rightside">
-						<div class="year">{{'{{post.year '}}}}</div>
-					</div>
-				</div>
-				<div class="post_content">
-					<div class="title"><a href="{{'{{post.url' }}}}">{{'{{post.title'}}}}</a>
-					<div class="content" ng-bind-html="post.content"></div>
-				</div>
-			</div>
-		</li>
-  </ul>
+<div ng-controller="PostsListCtrl">
+	<article ng-repeat="post in posts | filter:query">
+		<div class="dateformat">
+				<div class="day_month">{{'{{post.day_month '}}}}</div>
+				<div class="year">{{'{{post.year '}}}}</div>
+		</div>
+		<div class="post_content">
+			<div class="title"><a href="{{'{{post.url' }}}}">{{'{{post.title'}}}}</a></div>
+			<div class="content" ng-bind-html="post.content"></div>
+		</div>
+	</article>
 </div>

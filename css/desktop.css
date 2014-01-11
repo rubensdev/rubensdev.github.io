@@ -1,287 +1,152 @@
-/***************************************************
- * Common
- **************************************************/
-p {
-	color: #333;
-	margin: 12px 0;
-}
-
-a {
-	color: #f97e76;
-}
-
-h2 {
-	color: #f97e76;
-	font-size: 2em;
-}
-
-pre {
-	background-color: #EEE;
-	padding: 8px;
-	overflow-x: auto;
-}
-
-/***************************************************
- *  _layouts
- **************************************************/
-@font-face {
-	font-family: 'Pathway';
-	src: url('pathway.ttf');
-}
-
-html, body {
-	background-color: #E9F0F4; 
+html,body {
+	background-color: #fafafa;
 	font-family: 'Pathway';
 	margin: 0;
 	padding: 0;
-}
-
-.site {
-	width: 100%;
 	height: 100%;
-}
-
-/*.site:after {
-	content: "";
-	display: block;
-}*/
-
-.header {
-	background-color: #FF0;
-	height: 100%;
-	position: fixed;
-	overflow: hidden;
-	width: 224px;
-	z-index: 1001;
-}
-
-.image {
-	background: #27ae90;
-	display: block;
-	margin: 0 auto;
 	width: 100%;
 }
+
+article a { color: #e74c3c; }	
+article h2 { color: #e74c3c; font-family: 'Pathway';}
+article .date { font-size: 1.3em;}
+
+article .dateformat {
+	background-color: #e74c3c;	
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 8px;
+	width: 64px;
+}
+
+article .dateformat .day_month {
+	font-size: 2.3em;
+	float: left;
+	line-height: 0.9em;
+	text-transform: uppercase;
+	width: 70%;
+}
+
+article .dateformat .year {
+	float: right;
+	line-height: 14px;
+	width: 8px;
+	word-wrap: break-word;
+
+}
+
+article .post_content .title a { font-size: 1.7em; }
+article .post_content .content { font-size: 1.45em; font-family: 'Pathway'; text-align: justify; }
+article .content { font-size: 1.2em; font-family: 'Roboto'; padding-right: 32px; text-align: justify;}
+
+footer, .site:after {
+	height: 142px;
+}
+
+footer {
+   background-color: #34495e;
+	height: 142px;
+	padding: 16px;
+}
+
+footer p {
+	color: #FFF;
+	font-family: 'Pathway';
+	font-size: 1.6em;
+	text-align: center;
+}
+
+header {
+	background-color: #27ae90;
+	max-height: 384px;
+	width: 100%;
+}
+
+
+header #logo{ width: 100%; }
 
 nav {
-	background-color: #2E3641;
-	border-bottom: 4px solid #DDD;
-	display: block;
-	height: 100%;
+	background-color: #ecf0f1;
+	border-bottom: 3px solid #95a5a6;
+	height: 72px;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+nav ul {
+	display: inline-block;
+	float: left;
 	text-align: center;
+	width: 68%;
 }
 
 nav ul li {
-	border-bottom: 1px solid rgba(255,255,255,0.2);
-	display: block;
+	display: inline-block;
+	line-height: 72px;
 }
 
-nav ul a {
-	color: #FFF;
+nav ul li a {
 	display: block;
-	line-height: 48px;
-	font-size: 1.5em;
+	color: #7f8c8d;
+	font-family: 'Pathway';
+	font-size: 1.8em;
+	width: 128px;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav ul li a:hover {
+	color: #e74c3c;
 	text-decoration: none;
 }
 
-nav ul a:hover {
-	color: #C1CFD9;
-}
-
-div.maincontent {
-	margin-left: 224px;
-}
-
-div.maincontent .wrapper {
-	display: inline-block;
-	margin-top: 60px;
-	padding: 15px;
-	width: 100%;
-}
-
-div.top_menu {
-	background-color: #FFF;
-	height: 60px;
-	position: fixed;
-	left: 0;
-	right: 0;
-	padding: 8px;
-	width: 100%;
-	z-index: 1000;
-}
-
-div.top_menu .top_nav {
-	border: 1px solid #0F0;
-	display: none;
-	float: left;
-	margin-left: 224px;
-}
-
-div.top_search {
-	margin: 4px 16px 0 0;
+nav .search {
+	background: #FFF url('../img/search.png') no-repeat 10px 8px;
+	border: 1px solid #95a5a6;
+	border-radius: 2px;
+	margin: 20px 8px 0 0;
+	height: 32px;
 	float: right;
-}
-
-.search {
-	background: url('../img/search.png') no-repeat 10px 8px;
-	border: 1px solid #eaeaea;
-	box-shadow: none;
 	padding: 0 5px 0 35px;
+	vertical-align: middle;
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 	width: 20px;
-} 
-
-.search:focus{
-	border: 1px solid #eaeaea;
-	box-shadow: none;
-	width: 180px;
 }
 
-div.footer, .site:after {
-	height: 120px;
+nav .search:focus {
+	border: 1px solid #e74c3c;
+	width: 176px;
 }
 
-div.footer {
-	display: none;
-	background-color: #2E3641;
-	padding: 8px;
-	text-align: center;
-}
-div.footer p {
-	color: #FFF;
-}
-div.footer .followlinks ul {
-	text-align: center;
-}
-div.footer .followlinks ul li {
-	display: inline-block;
-	margin: 8px;
-}
-div.footer .followlinks ul li img {
-	display: block;
-	width: 64px;
-	height: 64px;
-}
-/*************************************************
- * Posts
- ************************************************/
-.post {
-   background-color: #FFF;
-	border-bottom: 4px solid #DDD;
-	margin: 0 auto;
-	margin-bottom: 16px;
-	min-height: 96px;
-	padding-bottom: 8px;
-	position: relative;
-	width: 60%;
-}
+section#content { margin-bottom: 128px;}
 
-.dateformat {
-	background-color: #F97E76;
-	color: #FFF;
-	padding: 8px;
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 72px;
-}
-
-.leftside {
-	float: left;
-}
-
-.day_month {
-	font-size: 2em;
-	line-height: 28px;
-	text-align: center;
-	text-transform: uppercase;
-	width: 48px;
-}
-
-.rightside {
-	float: right;
-}
-
-.year {
-	line-height: 14px;
-	text-align: center;
-	width: 6px;
-	word-wrap: break-word;
-}
-
-.post_content {
-	margin: 4px 16px 0 84px;
-}
-
-.post_content a {
-	color: #F97E76;	
-	text-decoration: none;
-}
-
-.post_content .title {
-	font-size: 1.5em;
-	position: relative;
-	top: 4px;
-}
-
-.post_content .content {
+section#content article {
+	background-color: #fff;
+	border-bottom: 4px solid #cdcdcd;
 	font-family: 'Pathway';
-	font-size: 0.9em;
-	margin: 4px 0;
+	margin: 32px auto;
+	min-height: 128px;
+	padding: 8px 16px 16px 72px;
 	position: relative;
-	text-align: justify;
-	top: 4px;
-}
-
-/*****************************************
- * Single Post
- ****************************************/
-.single_post {
-	background-color: #FFF;
-	border-bottom: 4px solid #DDD;
-	margin: 16px auto;
-	padding: 32px;
 	width: 90%;
 }
 
-.single_post h2 {
-	text-align: center;
+.site {
+	min-height: 100%;
+	margin-bottom: -142px;
 }
 
-.single_post .date {
-	font-size: 1.2em;
-	text-align: center;
-}
-
-.single_post .content {
-	margin: 32px 0;
-	font-family: 'Roboto';
-	text-align: justify;
-}
-
-/*****************************************
- * clearfix
- ****************************************/
-.clearfix:after {
-	clear: both;
-	content: ".";
+.site:after {
+	content: "";
 	display: block;
-	height: 0;
-	visibility: hidden;
 }
 
-.clearfix { display: inline-block;}
-
-/* Hides from IE-mac */
-* html .clearfix { height: 1%;}
-.clearfix { display: block;}
-/* End hide from IE-mac */
-
-/* Apply a natural box layout model to all elements */
-*, *:before, *:after {
-	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
-
-::selection {
-	background-color: #F00;
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;	
 }

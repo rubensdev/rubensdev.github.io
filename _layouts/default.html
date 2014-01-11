@@ -9,10 +9,11 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="/css/syntax.css">
 		  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+		  <link rel="stylesheet" href="/css/base.css" />
 		  <!-- Desktop CSS -->
-		  <link rel="stylesheet" media="(min-width: 50.063em)" href="/css/desktop.css" />
+		  <link rel="stylesheet" media="screen and (min-width: 600px)" href="/css/desktop.css" /> 
         <!-- Mobile CSS -->
-        <link rel="stylesheet" media="(max-width: 50em)" href="/css/mobile.css" />
+        <link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/mobile.css" /> 
 		  <!-- Google Fonts -->
 		  <script type="text/javascript" src="js/angular.min.js"></script>
 		  <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
@@ -20,42 +21,30 @@
 		  <script type="text/javascript"> postsApp.posts = {% include Helper/postshelper %} </script>
     </head>
     <body>
-        <div class="site">
-           <div class="header clearfix">
-			 	 <img class="image" src="/img/rubensdev_logo.png" /> 
-				 <nav>
-				 	 <ul>
-						 <li><a href="/">Home</a></li>
-						 <li><a href="#">About Me</a></li>
-					 </ul>
-				 </nav> 
-           </div> <!-- header -->
-			  <div class="top_menu">
-			     <ul class="top_nav">
-				      <li>Item 1</li>
-					   <li>Item 2</li>
-				  </ul>
-				  <div class="top_search">
-						<input class="form-control search" type="text" placeholder="search" ng-model="query"/>
-				  </div>
-			  </div> <!-- top_menu -->
-			  <div class="maincontent">
-					<div class="wrapper">
-					  	{{ content }}
-					</div>
-			  </div>	
-		  </div> <!-- site -->
-        <div class="footer">
-           <div class="contact">
-	            <p>Things I learned by Rubens García (c) 2014</p>
-           </div>
-			  <div class="followlinks">
-              <ul>
-					 <li><a href="https://github.com/rubensdev"><img style="background-color: #fff;" src="/img/githubicon.png" /></a></li>
-	             <li><a href="https://twitter.com/rubensdev"><img style="background-color: #32ccfe;" src="/img/twittericon.png" /></a></li>
-					 <li><a href="https://plus.google.com/+RubensGarcíaG/"><img style="background-color: #dd4c39;" src="/img/googleplusicon.png" /></a></li>
-				  </ul>
-			  </div>
-        </div> <!-- footer -->
-    </body>
+		<div class="site">
+			<header>
+				<div class="wrapper">
+					<img id="logo" src="/img/header.png" />
+				</div>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="/">HOME</a></li>
+					<li><a href="/about">ABOUT ME</a></li>
+					<li><a href="/contact">CONTACT</a></li>
+				</ul>
+			   <input class="search" type="text" placeholder="Search" ng-model="query"/>
+			</nav>
+			<section id="content">
+				<div class="wrapper">
+					{{ content }}
+				</div>
+			</section> 
+		</div>
+		<footer>
+			<div class="wrapper">
+				<p> This blog is created with love by Rubens García. Built with <a href="http://jekyllrb.com">Jekyll</a>.</p>
+			</div> 
+		</footer>
+	 </body>
 </html>

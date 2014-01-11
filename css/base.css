@@ -1,0 +1,29 @@
+@font-face {
+	src: url('pathway.ttf');
+	font-family: 'Pathway';
+}
+
+* { margin: 0;}
+a { text-decoration: none; }
+a:hover { text-decoration: none; }
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+input {
+	border: none;
+	border-radius: 2px;
+}
+
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom : 1; } /* IE7 */
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
