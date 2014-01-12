@@ -21,6 +21,8 @@ input {
 	border-radius: 2px;
 }
 
+section { margin: 0; padding: 0;}
+
 * html .clearfix { zoom: 1; } /* IE6 */
 *:first-child+html .clearfix { zoom : 1; } /* IE7 */
 

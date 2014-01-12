@@ -4,13 +4,13 @@ title: RubensDEV Things I learned
 ---
 
 <div ng-controller="PostsListCtrl">
-	<article ng-repeat="post in posts | filter:query">
+	<article class="posts" ng-repeat="post in posts | filter:query">
 		<div class="dateformat">
 				<div class="day_month">{{'{{post.day_month '}}}}</div>
 				<div class="year">{{'{{post.year '}}}}</div>
 		</div>
 		<div class="post_content">
-			<div class="title"><a href="{{'{{post.url' }}}}">{{'{{post.title'}}}}</a></div>
+			<div class="title"><a href="{{'{{post.url' }}}}#postContent">{{'{{post.title'}}}}</a></div>
 			<div class="content" ng-bind-html="post.content"></div>
 		</div>
 	</article>

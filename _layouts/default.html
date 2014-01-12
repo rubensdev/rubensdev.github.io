@@ -21,19 +21,21 @@
 		  <script type="text/javascript"> postsApp.posts = {% include Helper/postshelper %} </script>
     </head>
     <body>
-		<div class="site">
+		<div id="page" class="site clearfix">
 			<header>
 				<div class="wrapper">
 					<img id="logo" src="/img/header.png" />
 				</div>
 			</header>
 			<nav>
-				<ul>
-					<li><a href="/">HOME</a></li>
-					<li><a href="/about">ABOUT ME</a></li>
-					<li><a href="/contact">CONTACT</a></li>
-				</ul>
-			   <input class="search" type="text" placeholder="Search" ng-model="query"/>
+				<div class="wrapper">
+					<ul>
+						<li><a href="/">HOME</a></li>
+						<li><a href="/about#aboutMe">ABOUT ME</a></li>
+						<li><a href="/contact">CONTACT</a></li>
+					</ul>
+				   <input class="search" type="text" placeholder="Search" ng-model="query"/>
+				</div>
 			</nav>
 			<section id="content">
 				<div class="wrapper">
@@ -43,7 +45,8 @@
 		</div>
 		<footer>
 			<div class="wrapper">
-				<p> This blog is created with love by Rubens García. Built with <a href="http://jekyllrb.com">Jekyll</a>.</p>
+				<p> This blog is created with love by Rubens García.</p>
+				<p> Built with <a href="http://jekyllrb.com">Jekyll</a>.</p>
 			</div> 
 		</footer>
 	 </body>

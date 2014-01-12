@@ -1,5 +1,5 @@
 html,body {
-	background-color: #fafafa;
+	background-color: #E2E5E9;
 	font-family: 'Pathway';
 	margin: 0;
 	padding: 0;
@@ -7,6 +7,17 @@ html,body {
 	width: 100%;
 }
 
+#aboutPhoto { float: left; max-width: 40%;}
+
+article {
+	background-color: #fff;
+	border-bottom: 4px solid #cdcdcd;
+	font-family: 'Pathway';
+	margin: 32px auto;
+	min-height: 128px;
+	position: relative;
+	width: 90%;
+}
 article a { color: #e74c3c; }	
 article h2 { color: #e74c3c; font-family: 'Pathway';}
 article .date { font-size: 1.3em;}
@@ -36,22 +47,14 @@ article .dateformat .year {
 	line-height: 14px;
 	width: 8px;
 	word-wrap: break-word;
-
 }
 
 article .post_content .title a { font-size: 1.7em; }
 article .post_content .content { font-size: 1.45em; font-family: 'Pathway'; text-align: justify; }
-article .content { font-size: 1.2em; font-family: 'Roboto'; padding-right: 32px; text-align: justify;}
+article .content { font-size: 1.2em; font-family: 'Roboto'; text-align: justify;}
 
-footer, .site:after {
-	height: 142px;
-}
-
-footer {
-   background-color: #34495e;
-	height: 142px;
-	padding: 16px;
-}
+footer, .site:after { height: 142px; }
+footer { background-color: #34495e; height: 142px; padding: 32px;}
 
 footer p {
 	color: #FFF;
@@ -60,21 +63,19 @@ footer p {
 	text-align: center;
 }
 
-header {
-	background-color: #27ae90;
-	max-height: 384px;
-	width: 100%;
-}
-
-
+header {	background-color: #27ae90; max-height: 384px; width: 100%;}
 header #logo{ width: 100%; }
+
+.introduction { float: right; padding: 0px 16px 0px 16px; width: 60%;}
+.introduction h1 { font-family: 'Pathway'; font-size: 3.8em; margin: 0;}
+.introduction h2 { font-size: 1.8em; margin: 0;}
+.introduction p { margin-top: 16px; font-size: 1.25em; text-align: justify;}
 
 nav {
 	background-color: #ecf0f1;
 	border-bottom: 3px solid #95a5a6;
 	height: 72px;
 	margin: 0 auto;
-	max-width: 960px;
 }
 
 nav ul {
@@ -84,10 +85,7 @@ nav ul {
 	width: 68%;
 }
 
-nav ul li {
-	display: inline-block;
-	line-height: 72px;
-}
+nav ul li { display: inline-block; line-height: 72px;}
 
 nav ul li a {
 	display: block;
@@ -99,11 +97,7 @@ nav ul li a {
 	transition: all .3s ease;
 }
 
-nav ul li a:hover {
-	color: #e74c3c;
-	text-decoration: none;
-}
-
+nav ul li a:hover { color: #e74c3c; text-decoration: none;}
 nav .search {
 	background: #FFF url('../img/search.png') no-repeat 10px 8px;
 	border: 1px solid #95a5a6;
@@ -118,23 +112,12 @@ nav .search {
 	width: 20px;
 }
 
-nav .search:focus {
-	border: 1px solid #e74c3c;
-	width: 176px;
-}
+nav .search:focus { border: 1px solid #e74c3c; width: 176px;}
+
+.posts { padding: 8px 16px 16px 72px; }
 
 section#content { margin-bottom: 128px;}
-
-section#content article {
-	background-color: #fff;
-	border-bottom: 4px solid #cdcdcd;
-	font-family: 'Pathway';
-	margin: 32px auto;
-	min-height: 128px;
-	padding: 8px 16px 16px 72px;
-	position: relative;
-	width: 90%;
-}
+.single_post { padding: 32px; }
 
 .site {
 	min-height: 100%;
@@ -146,7 +129,13 @@ section#content article {
 	display: block;
 }
 
-.wrapper {
-	margin: 0 auto;
-	max-width: 960px;	
-}
+.socialBox { margin-top: 32px; width: 100%; text-align: center;}
+.socialBox li { display: inline-block; max-width: 15%;}
+.socialBox a { background: #95a5a6; display: block; -webkit-transition: all .3s ease; transition: all .3s ease;}
+.socialBox img { width: 100%;}
+.socialBox #twitter:hover { background-color: #00abec;}
+.socialBox #gplus:hover { background-color: #d85534;}
+.socialBox #linkedIn:hover { background-color: #0274b3;}
+.socialBox #github:hover { background-color: #3b3b3b;}
+
+.wrapper { margin: 0 auto;	max-width: 960px;}
