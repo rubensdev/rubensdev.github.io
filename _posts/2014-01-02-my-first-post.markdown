@@ -6,15 +6,13 @@ encoding: utf-8
 categories: stuffs mythings
 ---
 
-This is my first post and I'm proud of that. 
-
-I'm editing on VIM editor right now, I feel like a hacker.
-
 {% highlight javascript %}
-   // it prints my madness.
-	console.log('Hello world! This is my first post in this hacking blog!');
+	console.log('Hello world!');
 {% endhighlight %}
 
-This is a [Link][aweirdlink] with trying purposes.
+Nothing better to start a journey. The purpose of this blog, besides of practicing English,  is to tell you my everyday stories about this wonderful world of programming, things I'll learn and maybe some conclusions about life.
 
-[aweirdlink]:    http://rubensdev.com
+This is the moment in which everybody has New Year's resolutions and they work hard to keep them. I started without any of them, but this blog try to be one. So I hope to keep it.
+
+Nothing more to say. Hope to post soon. Happy New Year everyone.
+
