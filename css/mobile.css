@@ -1,82 +1,15 @@
-html,body {
-	font-family: 'Pathway';
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-}
-
 #aboutPhoto { display: block; margin: 0 auto; max-width: 60%;}
 
-article {
-	background-color: #fff;
-	border-bottom: 4px solid #cdcdcd;
-	font-family: 'Pathway';
-	margin: 0 auto;
-	margin-bottom: 32px;
-	min-height: 224px;
-	position: relative;
-	width: 90%;
-}
-article a { color: #e74c3c; }	
-article h2 { color: #e74c3c; font-family: 'Pathway';}
-article .date { font-size: 1.3em;}
+article { min-height: 224px;}
 
-article .dateformat {
-	background-color: #e74c3c;	
-	color: #FFF;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	text-align: center;
-	padding: 8px;
-	width: 64px;
-}
-
-article .dateformat .day_month {
-	font-size: 2.3em;
-	float: left;
-	line-height: 0.9em;
-	text-transform: uppercase;
-	width: 70%;
-}
-
-article .dateformat .year {
-	float: right;
-	line-height: 14px;
-	width: 8px;
-	word-wrap: break-word;
-}
-
-article .post_content .title a { font-size: 1.7em; }
-article .post_content .content { font-size: 1.45em; font-family: 'Pathway'; text-align: justify; }
-article .content { font-size: 1.2em; font-family: 'Roboto'; text-align: justify;}
-
-footer, .site:after { height: 142px; }
-footer { background-color: #34495e; height: 142px; padding: 32px;}
-
-footer p {
-	color: #FFF;
-	font-family: 'Pathway';
-	font-size: 1.25em;
-	text-align: center;
-}
-
-header {	background-color: #27ae90; max-height: 384px; width: 100%;}
-header #logo{ width: 100%; }
+footer p { font-size: 1.25em;}
 
 .introduction { margin-top: 16px;}
-.introduction h1 { font-family: 'Pathway'; font-size: 3em; margin: 0; line-height: 36px; text-align: center;}
+.introduction h1 { font-size: 3em; margin: 0; line-height: 36px; text-align: center;}
 .introduction h2 { font-size: 1.4em; margin: 8px 0; text-align: center;}
 .introduction p { margin-top: 16px; font-size: 1.25em; text-align: justify;}
 
-nav {
-	background-color: #ecf0f1;
-	border-bottom: 3px solid #95a5a6;
-	height: 48px;
-	margin: 0 auto;
-}
+nav { height: 48px;}
 
 nav ul { float: left; text-align: center; width: 100%;}
 nav ul li { display: inline-block; line-height: 48px; padding: 0px 16px 0 16px;}
@@ -88,39 +21,8 @@ nav ul li a {
 	transition: all .3s ease;
 }
 nav ul li a:hover { color: #e74c3c; }
-nav .search {
-	 background: #FFF url('../img/search.png') no-repeat 10px 8px;
-    border: 1px solid #95a5a6;
-    border-radius: 2px;
-	 display: none;
-    margin: 8px 8px 0 0;
-    height: 32px;
-    float: right;
-    padding: 0 5px 0 35px;
-    vertical-align: middle;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
-    width: 20px;
-}
-
-nav .search:focus { border: 1px solid #e74c3c; width: 135px;}
-
+nav .search { display: none;}
 
 .posts { padding: 8px 16px 16px 72px; }
 
-section#content { background-color: #E2E5E9; padding-top: 32px;}
-.single_post { padding: 32px; }
-
 .site { background-color: #E2E5E9; margin-bottom: -142px; min-height: 100%;}
-.site:after { content: ""; display: block;}
-
-.socialBox { margin-top: 32px; width: 100%; text-align: center;}
-.socialBox li { display: inline-block; max-width: 15%;}
-.socialBox a { background: #95a5a6; display: block; -webkit-transition: all .3s ease; transition: all .3s ease;}
-.socialBox img { width: 100%;}
-.socialBox #twitter:hover { background-color: #00abec;}
-.socialBox #gplus:hover { background-color: #d85534;}
-.socialBox #linkedIn:hover { background-color: #0274b3;}
-.socialBox #github:hover { background-color: #3b3b3b;}
-
-.wrapper { margin: 0 auto;	max-width: 960px;}
