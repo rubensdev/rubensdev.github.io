@@ -17,7 +17,7 @@ nav ul li a {
 	display: block;
 	color: #7f8c8d;
 	font-size: 1.8em;
-	width: 128px;
+	width: 100px;
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }

@@ -72,6 +72,12 @@ input { border: none; border-radius: 2px;}
 
 nav { background-color: #ecf0f1; border-bottom: 3px solid #95a5a6; margin: 0 auto;}
 
+.projectDesc { padding-left: 110px;}
+.projectBox h2 { font-size: 1.7em; margin: 0; padding: 0;}
+.projectBox img { width: 96px; position: absolute; top: 20px;}
+.projectBox p { font-size: 1.3em; text-align: justify; margin: 0; padding: 0;}
+.projectBox { border: 2px solid #E2E5E9; margin-top: 48px; padding: 16px; position: relative;}
+
 section { margin: 0; padding: 0;}
 section#content { padding-top: 32px;}
 .socialBox { margin-top: 32px; width: 100%; text-align: center;}
