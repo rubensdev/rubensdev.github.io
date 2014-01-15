@@ -42,6 +42,7 @@ article .dateformat .day_month {
 }
 article .dateformat .year {
 	float: right;
+	font-size: 1.1em;
 	line-height: 14px;
 	width: 8px;
 	word-wrap: break-word;
@@ -89,6 +90,7 @@ section#content { padding-top: 32px;}
 .socialBox #linkedIn:hover { background-color: #0274b3;}
 .socialBox #github:hover { background-color: #3b3b3b;}
 .single_post { padding: 32px; }
+.single_post .content { font-family: Sans; text-align: justify;}
 .site:after { content: ""; display: block; }
 
 .wrapper { margin: 0 auto; max-width: 960px; }
