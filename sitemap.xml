@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://rubensdev.com/</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/stuffs/mythings/2014/01/25/grunt-is-watching-you-coding.html</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/stuffs/mythings/2014/01/20/the-fail-is-upstairs.html</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/stuffs/mythings/2014/01/15/ideas-are-essential-but-resources-too.html</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/stuffs/mythings/2014/01/09/angularjs-ftw.html</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/stuffs/mythings/2014/01/02/my-first-post.html</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/about/</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/contact/</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/my_projects/</loc>
+  <lastmod>2014-02-10T12:44:30+00:00</lastmod>
+</url>
+<url>
+  <loc>http://rubensdev.com/todo-app/</loc>
+  <lastmod>2014-02-07T22:07:18+00:00</lastmod>
+</url>
+</urlset>

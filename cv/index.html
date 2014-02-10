@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="rdevCVApp">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0" />
+		<!-- compiled CSS -->
+		
+			<link rel="stylesheet" type="text/css" href="assets/dayofmycv-1.0.0.css" />
+		
+		<title>Day of My CV</title>
+	</head>
+	<body ng-controller="GameCtrl">
+		<ul class="langMenu" ng-show="$root.showLangMenu">
+			<li class="misc_img" id="spanishFlag" hm-tap="$root.chooseLang('es')"></li>
+			<li class="misc_img" id="englishFlag" hm-tap="$root.chooseLang('en')"></li>
+		</ul>
+		<div class="loadingApp" ng-class="{show: $root.isLoading}" ng-bind="$root.loadingMsg"></div>
+		<section class="content" ng-show="!$root.isLoading" ng-view></section>
+		<!-- Compiled JavaScript -->
+		
+			<script type="text/javascript" src="assets/dayofmycv-1.0.0.js"></script>
+		
+		<script type="text/javascript">
+			window.addEventListener('load', function(){
+				new FastClick(document.body);
+			});
+		</script>
+	</body>
+</html>

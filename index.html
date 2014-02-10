@@ -3,8 +3,8 @@ layout: default
 title: RubensDEV Things I learned
 ---
 
-<div ng-controller="PostsListCtrl">
-	<article class="posts" ng-repeat="post in posts | filter:query">
+<div>
+	<article class="posts" ng-repeat="post in posts | filter:query | startFrom: currentPage * pageSize | limitTo: pageSize">
 		<div class="dateformat">
 				<div class="day_month">{{'{{post.day_month '}}}}</div>
 				<div class="year">{{'{{post.year '}}}}</div>
@@ -14,4 +14,11 @@ title: RubensDEV Things I learned
 			<div class="content" ng-bind-html="post.content"></div>
 		</div>
 	</article>
+	<div class="pagination_buttons">
+		<div class="button" ng-class="{'disabled' : currentPage == 0}" 
+			  ng-click="currentPage = currentPage > 0? currentPage - 1 : currentPage">Previous</div>
+		<div class="pagination" ng-bind="(currentPage + 1 ) + '/' + numberOfPages()"></div>
+		<div class="button" ng-class="{'disabled' : currentPage >= posts.length/pageSize - 1}" 
+			  ng-click="currentPage = (currentPage >= posts.length/pageSize - 1) ? currentPage : currentPage + 1">Next</div>
+	</div>
 </div>

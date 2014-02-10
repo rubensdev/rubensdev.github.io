@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html ng-app="blogApp">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
-		  <link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
-		  <link rel="stylesheet" href="/css/reset.css">
-		  <!-- Google Fonts -->
-		  <link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>	
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-		  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-		  <link rel="stylesheet" href="/css/base.css" />
-		  <!-- Desktop CSS -->
-		  <link rel="stylesheet" media="screen and (min-width: 600px)" href="/css/desktop.css" /> 
-        <!-- Mobile CSS -->
-        <link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/mobile.css" /> 
-		  <script type="text/javascript" src="js/angular.min.js"></script>
-		  <script type="text/javascript" src="js/angular-sanitize.min.js"></script>
-		  <script type="text/javascript" src="js/controller.js"></script>
-		  <script type="text/javascript"> postsApp.posts = {% include Helper/postshelper %} </script>
-    </head>
-    <body>
+	<head>
+		<meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>{{ page.title }}</title>
+		<meta name="description" content="A blog with stuff about development which a humble developer learns and tells them to you.">
+      <meta name="viewport" content="width=device-width,maximum-scale=1,user-scalable=no">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/ico" />
+		<link rel="stylesheet" href="/css/reset.css">
+		<!-- Google Authorship and Publishet Markup -->
+		<link rel="author" href="https://plus.google.com/+RubensGarcíaG/posts" />
+		<link rel="publisher" href="https://plus.google.com/+RubensGarcíaG" />
+		<!-- Twitter Card data -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@RubensDEV">
+		<meta name="twitter:title" content="RubensDEV Things I learned">
+		<meta name="twitter:description" content="A blog with stuff about development which a humble developer learns and tells them to you.&amp;amp;amp;quot;">
+		<meta name="twitter:creator" content="@RubensDEV">
+		<meta name="twitter:image:src" content="http://rubensdev.com/img/logo.png">
+		<meta name="twitter:domain" content="rubensdev.com">
+		<!-- Google Fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Pathway+Gothic+One' rel='stylesheet' type='text/css'>	
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+      <!-- syntax highlighting CSS -->
+      <link rel="stylesheet" href="/css/syntax.css">
+		<link rel="stylesheet" href="/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/css/base.css" />
+		<link rel="stylesheet" href="/css/android.css" />
+		<!-- Desktop CSS -->
+		<link rel="stylesheet" media="screen and (min-width: 600px)" href="/css/desktop.css" /> 
+      <!-- Mobile CSS -->
+      <link rel="stylesheet" media="screen and (max-width: 600px)" href="/css/mobile.css" /> 
+		<script type="text/javascript" src="/js/angular.min.js"></script>
+		<script type="text/javascript" src="/js/angular-sanitize.min.js"></script>
+		<script type="text/javascript" src="/js/app.js"></script>
+		<script type="text/javascript"> angular.module('blogApp').constant('POSTS',{% include Helper/postshelper %}); </script>	
+		<script type="text/javascript" src="/js/Android.js"></script>
+   </head>
+   <body ng-controller="HomeController" onload="init()">
 		<div id="page" class="site clearfix">
 			<header>
 				<div class="wrapper">
 					<img id="logo" src="/img/header.png" />
+				</div>
+				<div id="android">
+					<div class="head android_parts"></div>
+					<div class="body android_parts"></div>
+					<div class="left_arm arm"></div>
+					<div class="right_arm arm"></div>
+					<div class="left_leg leg "></div>
+					<div class="right_leg leg"></div>
 				</div>
 			</header>
 			<nav>
@@ -36,6 +59,7 @@
 						<li><a href="/about#aboutMe">ABOUT ME</a></li>
 						<li><a href="/contact">CONTACT</a></li>
 						<li><a href="/my_projects">PROJECTS</a></li>
+						<li><a href="/cv">CV</a></li>
 					</ul>
 				   <input class="search" type="text" placeholder="Search" ng-model="query"/>
 				</div>
@@ -49,7 +73,8 @@
 		<footer>
 			<div class="wrapper">
 				<p> This blog is created with love by Rubens García.</p>
-				<p> Built with <a href="http://jekyllrb.com">Jekyll</a>.</p>
+				<p> Built with <a href="http://jekyllrb.com">Jekyll</a> and 
+					 spiced with <a href="http://angularjs.org">AngularJS</a>.</p>
 			</div> 
 		</footer>
 		<script type="text/javascript">

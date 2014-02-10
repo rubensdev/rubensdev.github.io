@@ -1,0 +1,8 @@
+[
+ { "id" : "r1_101", "name" : "Key", "state" : 0},
+ { "id" : "r1_102", "name" : "Papers", "state" : 0, "stack": ["MSG_156"]},
+ { "id" : "r1_103", "name" : "Coin",	"state" : 0},
+ { "id" : "r3_101", "name" : "Keys", "state" : 0},
+ { "id" : "r5_101", "name" : "Penguin", "state" : 0} 
+]
+

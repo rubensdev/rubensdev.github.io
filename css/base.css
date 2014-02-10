@@ -73,11 +73,34 @@ input { border: none; border-radius: 2px;}
 
 nav { background-color: #ecf0f1; border-bottom: 3px solid #95a5a6; margin: 0 auto;}
 
+.pagination_buttons { 
+	margin-bottom: 16px;
+	text-align: center;
+}
+.pagination_buttons .button {
+	background-color: #e74c3c;
+	border-bottom: 4px solid #c0392b;
+	color: #FFF;
+	display: inline-block;
+	font-size: 1.2em;
+	text-align: center;
+	padding: 16px 0px;
+	width: 72px;
+	cursor: pointer;
+}
+.pagination_buttons .button.disabled {
+	color: #f88d82;
+}
+.pagination_buttons .pagination {
+	font-size: 1.4em;
+	margin: 0px 16px 0px 16px;
+}
+
 .projectDesc { padding-left: 110px;}
 .projectBox h2 { font-size: 1.7em; margin: 0; padding: 0;}
 .projectBox img { width: 96px; position: absolute; top: 20px;}
 .projectBox p { font-size: 1.3em; text-align: justify; margin: 0; padding: 0;}
-.projectBox { border: 2px solid #E2E5E9; margin-top: 48px; padding: 16px; position: relative;}
+.projectBox { border: 2px solid #E2E5E9; margin-top: 48px; padding: 16px; position: relative; min-height: 136px;}
 
 section { margin: 0; padding: 0;}
 section#content { padding-top: 32px;}
@@ -90,7 +113,7 @@ section#content { padding-top: 32px;}
 .socialBox #linkedIn:hover { background-color: #0274b3;}
 .socialBox #github:hover { background-color: #3b3b3b;}
 .single_post { padding: 32px; }
-.single_post .content { font-family: Sans; text-align: justify;}
+.single_post .content { font-family: 'Droid Sans'; text-align: justify;}
 .site:after { content: ""; display: block; }
 
 .wrapper { margin: 0 auto; max-width: 960px; }
